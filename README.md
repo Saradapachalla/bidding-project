@@ -1,5 +1,5 @@
-Market Place Bidding Project
-A brief description of your project.
+# Market Place Bidding Project
+## A brief description of your project.
 Table of Contents
 Introduction
 Features
@@ -17,7 +17,7 @@ List key features of your project
 Highlight what makes it stand out
 Include any important use cases or benefits
 Installation
-Prerequisites
+## Prerequisites
 List any prerequisites (e.g., Node.js, Docker, etc.)
 Provide links or instructions on how to install them
 Clone the Repository
@@ -40,7 +40,7 @@ npm test
 Usage
 Provide instructions and examples on how to use your project. You may include code snippets, screenshots, or command-line instructions.
 
-Technologies Used
+## Technologies Used
 Frontend: React.
 Backend: Node.js, Express, Graphql, Express, Prisma.
 Database: PostgreSQL.
