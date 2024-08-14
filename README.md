@@ -23,7 +23,7 @@ Provide links or instructions on how to install them
 Clone the Repository
 bash
 Copy code
-git clone [https://github.com/your-username/your-repository.git](https://github.com/Saradapachalla/bidding-project.git )
+git clone [https://github.com/Saradapachalla/bidding-project.git](https://github.com/Saradapachalla/bidding-project.git )
 cd your-repository
 Install Dependencies
 bash
