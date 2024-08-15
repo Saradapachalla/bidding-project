@@ -16,7 +16,7 @@ datasource db {
 model User {
   id String @id @default(uuid())
   firstName String @map("first_name")
-  lastName String @map("last_name")
+  lastName String? @map("last_name")
   profileImageUrl String? @map("profile_image_url")
   email String @unique
   password String
@@ -24,3 +24,17 @@ model User {
 
   @@map("users")
 }
+
+model Job {
+  id String @id @default(uuid())
+  requirement String @db.VarChar(250)
+  description String @db.VarChar(250)
+  posterName String @map("poster_name")
+  posterContact String @map("poster_contact")
+  lowestBid Float? @map("lowest_bid") @default(0.0)
+  bidsCount Int? @map("bids_count") @default(0)
+  expirationDate DateTime? @map("expiration_date") @db.Date
+
+  @@map("jobs")
+}
+

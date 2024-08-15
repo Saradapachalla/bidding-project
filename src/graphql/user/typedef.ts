@@ -6,4 +6,15 @@ export const typeDefs = `#graphql
         email: String!
         profileImageURL: String
     }
+
+    type Job {
+        id: ID!
+        description: String!
+        requirement: String!
+        posterName: String!
+        posterContact: String!
+        lowestBid: String!
+        bidsCount: Int
+        expirationDate: String!
+    }
 `;

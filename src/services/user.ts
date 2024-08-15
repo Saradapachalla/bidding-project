@@ -11,6 +11,16 @@ export interface CreateUserPayload {
   password: string;
 }
 
+export interface CreateJobPayload {
+  requirement: string;
+  description: string;
+  posterName: string;
+  posterContact: string;
+  lowestBid: number;
+  bidsCount: number;
+  expirationDate: Date;
+}
+
 export interface GetUserTokenPayload {
   email: string;
   password: string;
@@ -68,6 +78,31 @@ class UserService {
   public static decodeJWTToken(token: string) {
     return JWT.verify(token, JWT_SECRET);
   }
+
+  // Temporarily Jobs details are kept here 
+  public static getJobById(id: string) {
+    return prismaClient.job.findUnique({ where: { id } });
+  }
+
+  // public static getJobs() {
+  //   return prismaClient.job.createMany({
+  //     data: []
+  //   })
+  // }
+
+  public static createJob(payload: CreateJobPayload) {
+    const { requirement, description, posterName, posterContact } = payload;
+
+    return prismaClient.job.create({
+      data: {
+        requirement, 
+        description, 
+        posterName, 
+        posterContact
+      },
+    });
+  }
+
 }
 
 export default UserService;
