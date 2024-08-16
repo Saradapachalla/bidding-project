@@ -7,26 +7,22 @@ The Market Place has two actors:
 2. Bidder: Self-employed individual that isbidding on work at a fixedprice.
 
 ### Features
-The site has a home page that:
-● Displays the 10 most recently published job postings.
-● Displays the top 10 most active and open jobs (measured by
-number of bids).
-● Includes a link to publish a new job posting.
-● The site has a page allowing new jobs to be posted that:
-● Displays a form collecting the following data points:
-● Job description with maximum length of 16KB.
-● Job requirements with maximum length of 16KB.
-● Name and contact info of the job poster.
-● Displays the current lowest bid amount.
-● Displays the number of bids.
-● Displays the auction expiration date/time and time remaining to
-bid.
-● Includes a form for placing a bid.
-● The system:
-● Automatically closes bidding when the posting expiration
-date/time is reached.
-● Automatically assigns the lowest Bidder as the winner of the
-auction when the auction is closed.
+- The site has a home page that:
+    - Displays the 10 most recently published job postings.
+    - Displays the top 10 most active and open jobs (measured by number of bids).
+    - Includes a link to publish a new job posting.
+    - The site has a page allowing new jobs to be posted that:
+-  Displays a form collecting the following data points:
+    - Job description with maximum length of 16KB.
+    - Job requirements with maximum length of 16KB.
+    - Name and contact info of the job poster.
+    - Displays the current lowest bid amount.
+    - Displays the number of bids.
+    - Displays the auction expiration date/time and time remaining to bid.
+    - Includes a form for placing a bid.
+- The system:
+    - Automatically closes bidding when the posting expiration date/time is reached.
+    - Automatically assigns the lowest Bidder as the winner of the auction when the auction is closed.
 
 ### Installation
 #### Prerequisites
@@ -55,7 +51,7 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 ### Technologies Used
-Frontend: React. TypeScript, Graphql, Apollo client, Ant design 
-Backend: Node.js, Express, Graphql Apollo server, Express server, TypeScript, Prisma.
-Database: PostgreSQL
-Others: VS Code, Docker Desktop.
+* Frontend: React. TypeScript, Graphql, Apollo client, Ant design 
+* Backend: Node.js, Express, Graphql Apollo server, Express server, TypeScript, Prisma.
+* Database: PostgreSQL
+* Others: VS Code, Docker Desktop.
